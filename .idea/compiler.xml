@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="authorization_server_main" target="1.8" />
+      <module name="authorization_server_test" target="1.8" />
+      <module name="jsip_main" target="1.8" />
+      <module name="jsip_test" target="1.8" />
+      <module name="LightSIP_main" target="1.8" />
+      <module name="LightSIP_test" target="1.8" />
+      <module name="sip_server_main" target="1.8" />
+      <module name="sip_server_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

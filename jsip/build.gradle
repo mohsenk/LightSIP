@@ -1,0 +1,19 @@
+group 'javax.com'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+
+dependencies {
+    compile group: 'log4j', name: 'log4j', version: '1.2.17'
+    compile group: 'junit', name: 'junit', version: '3.8.1'
+    compile group: 'javax.sip', name: 'android-jain-sip-ri', version: '1.2.344'
+}
+
+//task createJavaProject()  {
+//    sourceSets*.java.srcDirs*.each{ it.mkdirs() }
+//    sourceSets*.resources.srcDirs*.each{ it.mkdirs()}
+//
+//}
