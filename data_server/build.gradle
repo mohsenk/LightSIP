@@ -1,0 +1,17 @@
+group 'javax.com'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+
+dependencies {
+    compile group: 'redis.clients', name: 'jedis', version: '2.6.2'
+    compile project(':jsip')
+}
+
+task createJavaProject()  {
+    sourceSets*.java.srcDirs*.each{ it.mkdirs() }
+    sourceSets*.resources.srcDirs*.each{ it.mkdirs()}
+}

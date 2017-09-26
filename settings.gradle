@@ -1,2 +1,2 @@
 rootProject.name = 'LightSIP'
-include ':jsip',':sip_server',":authorization_server"
+include ':jsip',':sip_server',':sip_client',":authorization_server" ,':data_server', ':jsip-supply'

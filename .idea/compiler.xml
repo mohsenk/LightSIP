@@ -4,10 +4,16 @@
     <bytecodeTargetLevel>
       <module name="authorization_server_main" target="1.8" />
       <module name="authorization_server_test" target="1.8" />
+      <module name="data_server_main" target="1.8" />
+      <module name="data_server_test" target="1.8" />
+      <module name="jsip-supply_main" target="1.8" />
+      <module name="jsip-supply_test" target="1.8" />
       <module name="jsip_main" target="1.8" />
       <module name="jsip_test" target="1.8" />
       <module name="LightSIP_main" target="1.8" />
       <module name="LightSIP_test" target="1.8" />
+      <module name="sip_client_main" target="1.8" />
+      <module name="sip_client_test" target="1.8" />
       <module name="sip_server_main" target="1.8" />
       <module name="sip_server_test" target="1.8" />
     </bytecodeTargetLevel>

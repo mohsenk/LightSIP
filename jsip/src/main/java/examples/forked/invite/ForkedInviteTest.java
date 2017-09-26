@@ -3,12 +3,8 @@
  */
 package examples.forked.invite;
 
-import gov.nist.javax.sip.SipProviderImpl;
-
 import java.util.EventObject;
 import java.util.Hashtable;
-import java.util.Timer;
-import java.util.TimerTask;
 
 import javax.sip.DialogTerminatedEvent;
 import javax.sip.IOExceptionEvent;
@@ -19,12 +15,8 @@ import javax.sip.SipProvider;
 import javax.sip.TimeoutEvent;
 import javax.sip.TransactionTerminatedEvent;
 
-import org.apache.log4j.Appender;
-import org.apache.log4j.ConsoleAppender;
-import org.apache.log4j.FileAppender;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-import org.apache.log4j.SimpleLayout;
 import org.apache.log4j.helpers.NullEnumeration;
 
 import junit.framework.TestCase;

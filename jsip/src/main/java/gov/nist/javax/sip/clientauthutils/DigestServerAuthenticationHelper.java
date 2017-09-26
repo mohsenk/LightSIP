@@ -48,8 +48,8 @@ import javax.sip.message.Response;
  */
 
 public class DigestServerAuthenticationHelper  {
-    
-    private MessageDigest messageDigest;
+
+    protected MessageDigest messageDigest;
     
     public static final String DEFAULT_ALGORITHM = "MD5";
     public static final String DEFAULT_SCHEME = "Digest";
@@ -85,7 +85,7 @@ public class DigestServerAuthenticationHelper  {
      *
      * @return a generated nonce.
      */
-    private String generateNonce() {
+    protected String generateNonce() {
         // Get the time of day and run MD5 over it.
         Date date = new Date();
         long time = date.getTime();
@@ -146,11 +146,8 @@ public class DigestServerAuthenticationHelper  {
         byte[] mdbytes = messageDigest.digest(A2.getBytes());
         String HA2 = toHexString(mdbytes);
       
-        String cnonce = authHeader.getCNonce();
         String KD = HA1 + ":" + nonce;
-        if (cnonce != null) {
-            KD += ":" + cnonce;
-        }
+
         KD += ":" + HA2;
         mdbytes = messageDigest.digest(KD.getBytes());
         String mdString = toHexString(mdbytes);

@@ -8,6 +8,8 @@ sourceCompatibility = 1.8
 
 dependencies {
     compile project(':jsip')
+    compile project(':jsip-supply')
+    compile project(':data_server')
 }
 
 task createJavaProject()  {
